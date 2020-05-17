@@ -67,7 +67,7 @@ class LocationHandler {
                     if (location == null) {
                         requestNewLocationData(activity)
                     } else {
-                        Toast.makeText(activity.applicationContext,location.latitude.toString(), Toast.LENGTH_SHORT).show()
+                        Log.d("Location","Enabled")
                     }
                 }
             } else {
