@@ -82,8 +82,6 @@ class LocationHandler {
     }
     fun getCurrentLocation(callback: (Location) -> Unit)  {
 
-        var userLocation:Location? = null
-
         if (checkPermissions()) {
             if (isLocationEnabled()) {
                 mFusedLocationClient.lastLocation.addOnCompleteListener(activity) { task ->

@@ -104,8 +104,6 @@ fun initiateLocationUpdates(activity: Activity,listener:LocationHandlerCallBacks
 ```
 fun getCurrentLocation(callback: (Location) -> Unit)  {
 
-    var userLocation:Location? = null
-
     if (checkPermissions()) {
         if (isLocationEnabled()) {
             mFusedLocationClient.lastLocation.addOnCompleteListener(activity) { task ->
@@ -199,4 +197,4 @@ override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<Str
 ```
 
 
-### Check out my Post about Location Handling : [Location Handling](https://vijaysn.com/2020/04/23/ios-av-player/)
+### Check out my Post about Location Handling : [Location Handling](https://vijaysn.com/mobile/android/android-fused-location)
